@@ -265,6 +265,25 @@ textarea { min-height: 120px; }
   transform: translateY(-1px);
 }
 
+/* Social Links */
+.social-links {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.social-icon {
+  width: 28px;
+  height: 28px;
+  fill: var(--muted);
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover .social-icon {
+  fill: var(--line);
+  transform: translateY(-4px) scale(1.15);
+}
 
 .message.success { color:#22c55e; margin-top:10px; }
 .message.error { color:#ef4444; margin-top:10px; }
@@ -394,6 +413,19 @@ textarea { min-height: 120px; }
   <button class="cta-btn open-contact-modal" data-origin="geo-week-2026">
     Start a Conversation
   </button>
+
+  <div class="social-links">
+    <a href="https://www.linkedin.com/in/nicholasmccarty" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn">
+      <svg viewBox="0 0 24 24" class="social-icon">
+        <path d="M4.98 3.5C4.98 4.88 3.86 6 2.48 6S0 4.88 0 3.5 1.12 1 2.48 1 4.98 2.12 4.98 3.5zM.5 8h4v14h-4V8zm7 0h3.8v1.9h.1c.5-1 1.9-2.1 3.9-2.1 4.2 0 5 2.8 5 6.4V22h-4v-7.2c0-1.7 0-3.9-2.4-3.9s-2.7 1.9-2.7 3.8V22h-4V8z"/>
+      </svg>
+    </a>
+    <a href="https://github.com/nickmccarty" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+      <svg viewBox="0 0 24 24" class="social-icon">
+        <path d="M12 1C5.9 1 1 5.9 1 12c0 4.9 3.2 9 7.6 10.5.6.1.8-.3.8-.6v-2.1c-3.1.7-3.7-1.3-3.7-1.3-.5-1.2-1.2-1.5-1.2-1.5-1-.7.1-.7.1-.7 1.1.1 1.7 1.1 1.7 1.1 1 .1 1.7-.7 2.1-1.1.1-.7.4-1.2.7-1.5-2.5-.3-5.1-1.2-5.1-5.4 0-1.2.4-2.2 1.1-3-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 1.1.9-.2 1.9-.3 2.9-.3s2 .1 2.9.3c2.1-1.4 3-1.1 3-1.1.6 1.5.2 2.6.1 2.9.7.8 1.1 1.8 1.1 3 0 4.2-2.6 5.1-5.1 5.4.4.3.8 1 .8 2v3c0 .3.2.7.8.6C19.8 21 23 16.9 23 12c0-6.1-4.9-11-11-11z"/>
+      </svg>
+    </a>
+  </div>
 
 </section>
 
